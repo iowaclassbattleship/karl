@@ -30,12 +30,12 @@
   <section class="slide flex">
     <div class="signup flex flex-column justify-space-between">
       <h4>Apply for our wait list</h4>
-      <input type="email">
-      <button class="gold">Submit</button>
+      <form action="/apply" method="POST" class="flex flex-column justify-space-between">
+        <input type="email" name="email" placeholder="mail@example.com">
+        <button type="submit" class="gold">Submit</button>
+      </form>
     </div>
   </section>
-
-  <script src="static/main.js"></script>
 </body>
 
 </html>

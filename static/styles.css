@@ -48,10 +48,10 @@ section.slide .signup form {
     height: 120px;
 }
 
-section.slide .signup form h4 {
+section.slide .signup h4 {
     font-size: 30px;
     font-weight: 100;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .title-container h1 {

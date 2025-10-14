@@ -13,7 +13,7 @@ body {
     background: var(--color-black);
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    font-family: "Garamond";
+    font-family: "EB Garamond", serif;
 }
 
 .flex {
@@ -75,13 +75,13 @@ input {
     border: 2px solid var(--color-whitish);
     padding: 12px 20px;
     font-size: 24px;
-    font-family: "Garamond";
     letter-spacing: 1px;
     outline: none;
     border-radius: 8px;
     transition: all 0.3s ease;
     width: 100%;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 input:focus {
@@ -98,12 +98,17 @@ button {
     color: var(--color-white);
     font-size: 20px;
     cursor: pointer;
-    transition: all .3s ease
+    transition: all .3s ease;
+    font-family: inherit;
 }
 
 button.gold {
     color: var(--color-black);
     background: var(--color-gold);
+}
+
+.text-center {
+    text-align: center;
 }
 
 button.gold:hover {

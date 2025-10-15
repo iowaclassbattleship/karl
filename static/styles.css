@@ -9,11 +9,20 @@
 html,
 body {
     margin: 0;
-    height: 100%;
     background: var(--color-black);
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    height: 100%;
     font-family: "Garamond";
+    scroll-behavior: smooth;
+}
+
+.scroller {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* smoother on Chrome */
+    scroll-snap-stop: always;
+    -webkit-overflow-scrolling: touch;
+    /* smoother on mobile */
 }
 
 .flex {
@@ -37,10 +46,8 @@ body {
 
 section.slide {
     height: 100vh;
-    width: 100vw;
     color: var(--color-white);
     scroll-snap-align: start;
-    padding: 50px;
     box-sizing: border-box;
 }
 
@@ -48,10 +55,17 @@ section.slide .signup form {
     height: 120px;
 }
 
-section.slide .signup form h4 {
+h3 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h4 {
     font-size: 30px;
     font-weight: 100;
-    margin: 0;
+    margin: 0 0 20px 0;
 }
 
 .title-container h1 {
@@ -60,13 +74,6 @@ section.slide .signup form h4 {
     line-height: 60px;
     font-weight: 300;
     margin: 0;
-}
-
-h3 {
-    margin: 0;
-    font-weight: 100;
-    font-size: 20px;
-    letter-spacing: 2px;
 }
 
 input {

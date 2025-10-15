@@ -14,14 +14,13 @@ func valid(email string) bool {
 
 func writeTo(email string) {
 	var fileName = "emails.txt"
-	f, err := os.OpenFile(fileName, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	f, err := os.OpenFile("logs/"+fileName, os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer f.Close()
 
-	// Write the email
-	if _, err := f.WriteString(email); err != nil {
+	if _, err := f.WriteString(email + "\n"); err != nil {
 		log.Fatal(err)
 	}
 }

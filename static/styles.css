@@ -19,10 +19,8 @@ body {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    /* smoother on Chrome */
     scroll-snap-stop: always;
     -webkit-overflow-scrolling: touch;
-    /* smoother on mobile */
 }
 
 .flex {
@@ -55,17 +53,10 @@ section.slide .signup form {
     height: 120px;
 }
 
-h3 {
-    margin: 0;
-    font-weight: 100;
-    font-size: 20px;
-    letter-spacing: 2px;
-}
-
-h4 {
+section.slide .signup h4 {
     font-size: 30px;
     font-weight: 100;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
 }
 
 .title-container h1 {
@@ -82,13 +73,13 @@ input {
     border: 2px solid var(--color-whitish);
     padding: 12px 20px;
     font-size: 24px;
-    font-family: "Garamond";
     letter-spacing: 1px;
     outline: none;
     border-radius: 8px;
     transition: all 0.3s ease;
     width: 100%;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 input:focus {
@@ -105,7 +96,8 @@ button {
     color: var(--color-white);
     font-size: 20px;
     cursor: pointer;
-    transition: all .3s ease
+    transition: all .3s ease;
+    font-family: inherit;
 }
 
 button.gold {
@@ -113,22 +105,52 @@ button.gold {
     background: var(--color-gold);
 }
 
+.text-center {
+    text-align: center;
+}
+
 button.gold:hover {
     background: var(--color-dark-gold);
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 28px;
+    line-height: 1.2;
     font-weight: 100;
-    margin: 10px 0;
+    margin: 0;
 }
 
 h2.gold {
     color: var(--color-gold);
 }
 
+h3 {
+    margin: 0;
+    color: rgb(182, 182, 182);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+h5 {
+    color: rgb(83, 83, 83);
+    margin: 0;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.simple-margin {
+    margin: 0 20px;
+}
+
 .max-1000 {
     max-width: 1000px;
+}
+
+.meaningful {
+    padding: 20px 5px;
+    border-top: solid 1px rgb(83, 83, 83);
+    border-bottom: solid 1px rgb(83, 83, 83);
 }
 
 @media (min-width: 1024px) {
@@ -140,6 +162,7 @@ h2.gold {
     .title-container h3 {
         font-size: 30px;
         letter-spacing: 3px;
+        margin: 0;
     }
 
     .input-container input {
@@ -154,5 +177,9 @@ h2.gold {
     h2 {
         font-size: 50px;
         line-height: 60px;
+    }
+
+    h4 {
+
     }
 }

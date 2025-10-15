@@ -4,5 +4,5 @@ window.onload = () => {
         setTimeout(() => {
             document.location = "/";
         }, 1000);
-    }, 3000);
+    }, 2500);
 };

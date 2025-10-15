@@ -1,0 +1,1 @@
+docker build -t karl . && docker run -d -p 8000:8000 -v $(pwd)/logs:/app/logs karl

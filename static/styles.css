@@ -11,7 +11,7 @@ body {
     margin: 0;
     background: var(--color-black);
     height: 100%;
-    font-family: "Garamond";
+    font-family: "EB Garamond";
     scroll-behavior: smooth;
 }
 
